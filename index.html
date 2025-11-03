@@ -7,84 +7,61 @@
     <!-- Modern Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #234e70;
-            --accent: #ff9f1c;
-            --bg: #f7fafc;
-            --card: #fff;
-            --text: #202124;
-            --subtitle: #6c757d;
-        }
-        body {
-            background: var(--bg);
-            font-family: 'Inter', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 650px;
-            background: var(--card);
-            margin: 48px auto 0 auto;
-            border-radius: 18px;
-            box-shadow: 0 6px 36px rgba(35, 78, 112, 0.08), 0 1.5px 8px rgba(35, 78, 112, 0.06);
-            padding: 48px 36px 36px 36px;
-            transition: box-shadow 0.2s;
-        }
-        h1 {
-            font-family: 'Montserrat', Arial, sans-serif;
-            color: var(--primary);
-            font-size: 2.35em;
-            margin-bottom: 0.15em;
-            letter-spacing: 0.5px;
-        }
-        .subtitle {
-            color: var(--subtitle);
-            font-weight: 500;
-            margin-top: 0;
-            margin-bottom: 1.25em;
-            font-size: 1.13em;
-        }
-        h2 {
-            color: var(--primary);
-            font-size: 1.24em;
-            font-family: 'Montserrat', Arial, sans-serif;
-            margin-top: 1.7em;
-            margin-bottom: 0.7em;
-            letter-spacing: 0.5px;
-        }
-        .section {
-            margin-bottom: 1.25em;
-        }
-        ul {
-            margin: 0.35em 0 0.35em 1.2em;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 0.16em;
-            font-size: 1.05em;
-            line-height: 1.7;
-        }
-        .social {
-            margin-top: 1.4em;
-        }
-        .social a {
-            color: var(--accent);
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 1.05em;
-        }
-        .social a:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            background: var(--accent);
-            color: #fff;
-            padding: 0.18em 0.75em;
-            border-radius: 5px;
-            font-weight: 700;
-            margin-right: 0.3em;
-        }
+      :root {
+    --primary: #8ab4f8;      /* Soft blue for headings */
+    --accent: #ff9f1c;       /* Accent color */
+    --bg: #121212;           /* Dark background */
+    --card: #1e1e1e;         /* Slightly lighter dark for containers */
+    --text: #e0e0e0;         /* Light gray text */
+    --subtitle: #bbbbbb;     /* Medium gray for subtitles */
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 650px;
+    background: var(--card);
+    margin: 48px auto 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 6px 36px rgba(0,0,0,0.8), 0 1.5px 8px rgba(0,0,0,0.6);
+    padding: 48px 36px 36px 36px;
+    transition: box-shadow 0.2s;
+}
+
+h1, h2 {
+    color: var(--primary);
+}
+
+.subtitle {
+    color: var(--subtitle);
+    font-weight: 500;
+}
+
+.social a {
+    color: var(--accent);
+}
+
+.highlight {
+    background: var(--accent);
+    color: #121212;
+    padding: 0.18em 0.75em;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: 0.3em;
+}
+
+img, video {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(35, 78, 112, 0.3);
+}
+
         @media (max-width: 600px){
             .container {
                 padding: 20px 8px;
