@@ -3,79 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhi Dance Bio</title>
+    <title>Abhi | Dance Bio</title>
+    <!-- Modern Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #234e70;
+            --accent: #ff9f1c;
+            --bg: #f7fafc;
+            --card: #fff;
+            --text: #202124;
+            --subtitle: #6c757d;
+        }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #f6f8fa;
-            color: #222;
+            background: var(--bg);
+            font-family: 'Inter', Arial, sans-serif;
             margin: 0;
             padding: 0;
+            min-height: 100vh;
         }
         .container {
-            max-width: 700px;
-            background: #fff;
-            margin: 40px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.09);
-            padding: 40px 30px;
+            max-width: 650px;
+            background: var(--card);
+            margin: 48px auto 0 auto;
+            border-radius: 18px;
+            box-shadow: 0 6px 36px rgba(35, 78, 112, 0.08), 0 1.5px 8px rgba(35, 78, 112, 0.06);
+            padding: 48px 36px 36px 36px;
+            transition: box-shadow 0.2s;
         }
         h1 {
-            font-size: 2.6em;
-            color: #232946;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: var(--primary);
+            font-size: 2.35em;
+            margin-bottom: 0.15em;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            color: var(--subtitle);
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 1.25em;
+            font-size: 1.13em;
         }
         h2 {
-            margin-top: 1em;
-            color: #364fc7;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 4px;
+            color: var(--primary);
+            font-size: 1.24em;
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin-top: 1.7em;
+            margin-bottom: 0.7em;
+            letter-spacing: 0.5px;
         }
         .section {
-            margin-bottom: 25px;
+            margin-bottom: 1.25em;
         }
         ul {
-            margin: 0.5em 0 0.5em 1.5em;
+            margin: 0.35em 0 0.35em 1.2em;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.16em;
+            font-size: 1.05em;
+            line-height: 1.7;
         }
         .social {
-            margin-top: 1.5em;
-            font-size: 1.1em;
+            margin-top: 1.4em;
         }
         .social a {
-            color: #1a73e8;
+            color: var(--accent);
+            font-weight: 700;
             text-decoration: none;
-            margin-right: 10px;
+            font-size: 1.05em;
         }
         .social a:hover {
             text-decoration: underline;
         }
+        .highlight {
+            background: var(--accent);
+            color: #fff;
+            padding: 0.18em 0.75em;
+            border-radius: 5px;
+            font-weight: 700;
+            margin-right: 0.3em;
+        }
         @media (max-width: 600px){
             .container {
-                padding: 18px 8px;
+                padding: 20px 8px;
+            }
+            h1 {
+                font-size: 1.5em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Abhi | Dance Bio</h1>
-        
-        <div class="section">
-            <strong>Dance Instructor | Performer</strong>
-        </div>
+        <h1>Abhi</h1>
+        <div class="subtitle">Dance Instructor & Performer</div>
         
         <div class="section">
             <h2>About</h2>
-            <p>
-                Abhi is a passionate and versatile dancer with a rich background as both performer and instructor.<br>
-                <br>
-                • University Dance Team member (2009–2011), with multiple solo and team wins at inter-college level.<br>
-                • Performed at the IPL Cricket opening ceremony in Chennai.<br>
-                • Stage performer for artists Sean Paul, Akcent, and Flo Rida during their India tours.<br>
-                • Hip Hop Dance Instructor at Hip Hop India, Bangalore (2012–2015).<br>
-                • Currently teaching free dance classes at Amazon (2024–present).<br>
-                • Trained in Hip Hop, House, Popping, and Locking styles.<br>
-                • Former member of school and university soccer teams; zonal-level soccer & solo winner.
-            </p>
+            <ul>
+                <li>Former member of <span class="highlight">Twisters University Dance Team</span> at College of Engineering, Guindy (Anna University) (2009–2011).</li>
+                <li>Multiple solo and team victories at inter-college level.</li>
+                <li>Performed at IPL Cricket opening ceremony in Chennai.</li>
+                <li>Stage shows for Sean Paul, Akcent, and Flo Rida (India tours).</li>
+                <li>Professional Hip Hop Dance Instructor at Hip Hop India, Bangalore (2012–2015).</li>
+                <li>Teaching free dance classes at Amazon (2024–present).</li>
+                <li>Trained in Hip Hop, House, Popping, and Locking.</li>
+                <li>Former school & university soccer team player; zonal-level soccer & freestyle solo winner.</li>
+            </ul>
         </div>
         
         <div class="section">
@@ -85,12 +121,12 @@
                 <li>House</li>
                 <li>Popping</li>
                 <li>Locking</li>
-                <li>Stage Performance / Competition Prep</li>
+                <li>Stage Performance & Competition Prep</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Contact & Social</h2>
+            <h2>Social & Contact</h2>
             <div class="social">
                 Public Instagram:
                 <a href="https://instagram.com/abhi7_cr" target="_blank">@abhi7_cr</a>
